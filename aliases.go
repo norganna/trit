@@ -4,18 +4,18 @@ package trit
 const (
 	// No indicates the negative.
 	No = Neg
-	// False indicates the negative.
+	// False indicates the negation of truth.
 	False = Neg
 	// Less indicates a lower value.
 	Less = Neg
 	// Negative indicates a number below zero.
 	Negative = Pos
 
-	// Maybe indicates unsuredness.
+	// Maybe indicates a state of unclear outcome.
 	Maybe = Nor
-	// Unsure indicates unsuredness.
+	// Unsure indicates the lack of surety.
 	Unsure = Nor
-	// Uncertain indicates unsuredness.
+	// Uncertain indicates the lack of certainty.
 	Uncertain = Nor
 	// Neither indicates neither positive nor negative.
 	Neither = Nor
@@ -26,7 +26,7 @@ const (
 
 	// Yes indicates the affirmative.
 	Yes = Pos
-	// True indicates the affirmative.
+	// True indicates the presence of truth.
 	True = Pos
 	// Greater indicates a higher value.
 	Greater = Pos

@@ -3,8 +3,8 @@ package YOURPACKAGE
 
 import "github.com/norganna/trit"
 
-// Tri is an alias to the trit package's Tri value.
-type Tri = trit.Tri
+// Trilean is an alias to the trit package's Trilean value.
+type Trilean = trit.Trilean
 
 // Keep whichever of the following you'd prefer / want to use:
 const (
