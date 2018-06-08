@@ -6,6 +6,8 @@ const (
 	No = Neg
 	// False indicates the negation of truth.
 	False = Neg
+	// Fallicy indicates dirty dirty lies.
+	Fallicy = Neg
 	// Less indicates a lower value.
 	Less = Neg
 	// Negative indicates a number below zero.
@@ -28,6 +30,8 @@ const (
 	Yes = Pos
 	// True indicates the presence of truth.
 	True = Pos
+	// Truth indicates the correctness of something.
+	Truth = Pos
 	// Greater indicates a higher value.
 	Greater = Pos
 	// Positive indicates a number above zero.

@@ -6,17 +6,17 @@ A Trinary digit is analogous to a binary digit (0 or 1) in that it has 3 states 
 
 We can thus use trinary digits in the same way that binary digits are used to represent the boolean values of true and false to represent a third (middle) state of uncertainty.
 
-To more easily use in your own code, add the following to a file called trit.go in your directory:
+To more easily use in your own code, add the file as provided in `contrib/tril.go` in your directory.
 
-(Note, a more detailed version of the following is provided in `contrib/` for you to copy to your project.)
+## Example code
 
 ```golang
 package main
 
 import 	"github.com/nedscode/transit/lib/trit"
 
-// Tri is an alias to the trit package's Tri value.
-type Tri = trit.Tri
+// A tril (analogous as bool is to Boolean) is an alias to the trit package's Trilean value.
+type tril = trit.Trilean
 
 // The following definitions are up to your own interpretation:
 const (
@@ -24,14 +24,8 @@ const (
 	no = trit.Neg
 	maybe = trit.Nor
 )
-```
 
-## Example code
-
-Assuming you've copied the trit.go file into your project:
-
-```go
-func canEat(thing string) Tri {
+func canEat(thing string) tril {
 	switch thing {
     case "nail":
         return no
