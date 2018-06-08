@@ -11,3 +11,33 @@ const (
 	// Pos is yes, positive or 1.
 	Pos
 )
+
+// And is a convenience method to call the And(a,b) operator.
+func (a Trilean) And(b Trilean) Trilean {
+	return And(a, b)
+}
+
+// Or is a convenience method to call the Or(a,b) operator.
+func (a Trilean) Or(b Trilean) Trilean {
+	return Or(a, b)
+}
+
+// ImpK is a convenience method to call the ImpK(a,b) operator.
+func (a Trilean) ImpK(b Trilean) Trilean {
+	return ImpK(a, b)
+}
+
+// ImpŁ is a convenience method to call the ImpŁ(a,b) operator.
+func (a Trilean) ImpŁ(b Trilean) Trilean {
+	return ImpŁ(a, b)
+}
+
+// Equivalent is a convenience method to call the Equivalent(a,b) operator.
+func (a Trilean) Equivalent(b Trilean) Trilean {
+	return Equivalent(a, b)
+}
+
+// Not is a convenience method to call the Not(a) operator.
+func (a Trilean) Not() Trilean {
+	return Negate(a)
+}

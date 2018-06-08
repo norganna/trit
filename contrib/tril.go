@@ -22,8 +22,8 @@ const (
 
 // When dealing with veracity:
 const (
-	truth       = trit.Pos
-	fallicy     = trit.Neg
+	truth     = trit.Pos
+	fallicy   = trit.Neg
 	uncertain = trit.Nor
 )
 
