@@ -15,8 +15,8 @@ package main
 
 import 	"github.com/nedscode/transit/lib/trit"
 
-// Tryte (trinary byte) is an alias to the tri package's Tryte value.
-type Tryte = trit.Tryte
+// Tri is an alias to the trit package's Tri value.
+type Tri = trit.Tri
 
 // The following definitions are up to your own interpretation:
 const (
@@ -31,7 +31,7 @@ const (
 Assuming you've copied the trit.go file into your project:
 
 ```go
-func canEat(thing string) Tryte {
+func canEat(thing string) Tri {
 	switch thing {
     case "nail":
         return no

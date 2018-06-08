@@ -3,8 +3,8 @@ package YOURPACKAGE
 
 import "github.com/norganna/trit"
 
-// Tryte (trinary byte) is an alias to the trit package's Tryte value.
-type Tryte = trit.Tryte
+// Tri is an alias to the trit package's Tri value.
+type Tri = trit.Tri
 
 // Keep whichever of the following you'd prefer / want to use:
 const (

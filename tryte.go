@@ -1,11 +1,11 @@
 package trit
 
-// Tryte is a trinary value that represents yes, no or maybe / greater, less or equal.
-type Tryte int8
+// Tri is a trinary value that represents yes, no or maybe / greater, less or equal.
+type Tri int8
 
 const (
 	// Neg is negative or -1.
-	Neg Tryte = iota - 1
+	Neg Tri = iota - 1
 	// Nor is neither positive, nor negative, nothing, zero or 0.
 	Nor
 	// Pos is positive or 1.
