@@ -1,44 +1,47 @@
 package trit
 
-/*
-You can use the values directly from this library, however to more easily use in your own code, add the following
-to a file called `trit.go` in your own project's directory:
-
-```golang
-import 	"github.com/nedscode/transit/lib/trit"
-
-// Tryte is an alias to the tri package's Tryte value
-type Tryte = trit.Tryte
-const (
-	yes = trit.Yes
-	no = trit.No
-	maybe = trit.Maybe
-
-	greater = trit.Greater
-	less = trit.Less
-	equal = trit.Equal
-)
-```
-
-*/
-
 // Tryte is a trinary value that represents yes, no or maybe / greater, less or equal.
 type Tryte int8
 
 const (
-	// No or -1
-	No Tryte = iota - 1
-	// Maybe or 0
-	Maybe
-	// Yes or 1
-	Yes
+	// Neg is negative or -1.
+	Neg Tryte = iota - 1
+	// Nor is neither positive, nor negative, nothing, zero or 0.
+	Nor
+	// Pos is positive or 1.
+	Pos
 )
 
+// The following aliases are provided for convenience, if you want to use the library in-place:
 const (
-	// Less or -1
-	Less Tryte = iota - 1
-	// Equal or 0
-	Equal
-	// Greater or 1
-	Greater
+	// No indicates the negative.
+	No = Neg
+	// False indicates the negative.
+	False = Neg
+	// Less indicates a lower value.
+	Less = Neg
+	// Negative indicates a number below zero.
+	Negative = Pos
+
+	// Maybe indicates unsuredness.
+	Maybe = Nor
+	// Unsure indicates unsuredness.
+	Unsure = Nor
+	// Uncertain indicates unsuredness.
+	Uncertain = Nor
+	// Neither indicates neither positive nor negative.
+	Neither = Nor
+	// Zero indicates nothing.
+	Zero = Nor
+	// Equal indicates an equivalent value.
+	Equal = Nor
+
+	// Yes indicates the affirmative.
+	Yes = Pos
+	// True indicates the affirmative.
+	True = Pos
+	// Greater indicates a higher value.
+	Greater = Pos
+	// Positive indicates a number above zero.
+	Positive = Pos
 )

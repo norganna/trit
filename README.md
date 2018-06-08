@@ -1,22 +1,28 @@
 # Trit (trinary digit)
 
-Trit is a tiny library that can add trinary values which can represent `yes`, `no` and `maybe` (or `greater`, `less` and `equal` if you prefer).
+Trit is a tiny library that can add trinary values which can represent `yes`, `no` and `maybe` (or `greater`, `less` and `equal`, etc).
+
+A Trinary digit is analogous to a binary digit (0 or 1) in that it has 3 states instead of 2 (-1, 0 or 1).
+
+We can thus use trinary digits in the same way that binary digits are used to represent the boolean values of true and false to represent a third (middle) state of uncertainty.
 
 To more easily use in your own code, add the following to a file called trit.go in your directory:
 
+(Note, a more detailed version of the following is provided in `contrib/` for you to copy to your project.)
+
 ```golang
+package main
+
 import 	"github.com/nedscode/transit/lib/trit"
 
-// Tryte (trinary byte) is an alias to the tri package's Tryte value
+// Tryte (trinary byte) is an alias to the tri package's Tryte value.
 type Tryte = trit.Tryte
-const (
-	yes = trit.Yes
-	no = trit.No
-	maybe = trit.Maybe
 
-	greater = trit.Greater
-	less = trit.Less
-	equal = trit.Equal
+// The following definitions are up to your own interpretation:
+const (
+	yes = trit.Pos
+	no = trit.Neg
+	maybe = trit.Nor
 )
 ```
 

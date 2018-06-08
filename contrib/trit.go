@@ -3,15 +3,31 @@ package YOURPACKAGE
 
 import "github.com/norganna/trit"
 
-// Tryte (trinary byte) is an alias to the trit package's Tryte value
+// Tryte (trinary byte) is an alias to the trit package's Tryte value.
 type Tryte = trit.Tryte
 
+// Keep whichever of the following you'd prefer / want to use:
 const (
-	yes   = trit.Yes
-	no    = trit.No
-	maybe = trit.Maybe
+	yes   = trit.Pos
+	no    = trit.Neg
+	maybe = trit.Nor
+)
 
-	greater = trit.Greater
-	less    = trit.Less
-	equal   = trit.Equal
+const (
+	greater = trit.Pos
+	less    = trit.Neg
+	equal   = trit.Nor
+)
+
+const (
+	truth       = trit.Pos
+	falsity     = trit.Neg
+	uncertainty = trit.Nor
+)
+
+// Or make up your own:
+const (
+	giraffe  = trit.Pos
+	elephant = trit.Neg
+	mouse    = trit.Nor
 )
